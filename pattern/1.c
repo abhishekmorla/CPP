@@ -1,3 +1,5 @@
+//Square Star Pattern
+
 #include <stdio.h>
 
 
