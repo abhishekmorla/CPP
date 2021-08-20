@@ -16,7 +16,7 @@ class queues{
             back=-1;
         }
 
-        void push(int x)
+        void enqueue(int x)
         {
             if (back==n-1)
             {
@@ -32,7 +32,7 @@ class queues{
             }
         }
 
-        void pop(){
+        void dequeue(){
             if (front==-1 || front>back)
             {
                 cout<<"no elements in queue"<<endl;
@@ -71,13 +71,13 @@ class queues{
 int main()
 {
     queues q;
-    q.push(1);
-    q.push(2);
-    q.push(3);
-    q.push(4);
+    q.enqueue(1);
+    q.enqueue(2);
+    q.enqueue(3);
+    q.enqueue(4);
     cout<<q.peek()<<endl;
-    q.pop();
-    q.push(12);
+    q.dequeue();
+    q.enqueue(12);
     q.display();
     return 0;
 }
